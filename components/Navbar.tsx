@@ -20,7 +20,7 @@ const Navbar: FC = () => {
     <Nav>
       <div>
         <Link href={"/"} passHref>
-          <MenuItem>NEXT</MenuItem>
+          <MenuItem>Movie List</MenuItem>
         </Link>
       </div>
       <div>
