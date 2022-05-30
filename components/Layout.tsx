@@ -1,7 +1,19 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
-const Layout: FC = () => {
-  return <div></div>;
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: FC<LayoutProps> = ({ children }) => {
+  return (
+    <div>
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;
